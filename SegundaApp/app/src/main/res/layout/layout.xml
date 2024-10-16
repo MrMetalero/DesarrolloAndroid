@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/principal">
+
+    <TextView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@color/purple_700"
+        app:layout_constraintStart_toStartOf="@+id/principal"
+        app:layout_constraintEnd_toEndOf="@+id/principal"
+        app:layout_constraintTop_toTopOf="@+id/principal"
+        app:layout_constraintBottom_toBottomOf="@+id/principal"
+        android:id="@+id/cajaCentral"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@color/teal_200"
+        app:layout_constraintStart_toEndOf="@+id/cajaCentral"
+        app:layout_constraintTop_toBottomOf="@+id/cajaCentral"
+        android:id="@+id/CajaDer1"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@color/teal_200"
+        app:layout_constraintEnd_toStartOf="@+id/cajaCentral"
+        app:layout_constraintTop_toBottomOf="@+id/cajaCentral"
+        android:id="@+id/CajaIzq1"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/CajaIzq1"
+        app:layout_constraintStart_toEndOf="@+id/CajaIzq1"
+        android:id="@+id/CajaCentroNegro"
+        >
+    </TextView>
+
+
+    <TextView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@color/teal_200"
+        app:layout_constraintStart_toEndOf="@+id/CajaCentroNegro"
+        app:layout_constraintTop_toBottomOf="@+id/CajaCentroNegro"
+        android:id="@+id/CajaDer2"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@color/teal_200"
+        app:layout_constraintEnd_toStartOf="@+id/CajaCentroNegro"
+        app:layout_constraintTop_toBottomOf="@+id/CajaCentroNegro"
+        android:id="@+id/CajaIzq2"
+        >
+    </TextView>
+
+
+    <TextView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@color/purple_700"
+        app:layout_constraintEnd_toStartOf="@+id/CajaIzq2"
+        app:layout_constraintTop_toBottomOf="@+id/CajaIzq2"
+        android:id="@+id/CajaCentroAbajo"
+        >
+    </TextView>
+
+
+    <TextView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@color/purple_700"
+        app:layout_constraintStart_toEndOf="@+id/CajaIzq2"
+        app:layout_constraintTop_toBottomOf="@+id/CajaIzq2"
+        android:id="@+id/CajaIzqMax"
+        >
+    </TextView>
+
+
+    <TextView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@color/purple_700"
+        app:layout_constraintStart_toEndOf="@+id/CajaDer2"
+        app:layout_constraintTop_toBottomOf="@+id/CajaDer2"
+        android:id="@+id/CajaDerMax"
+        >
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
