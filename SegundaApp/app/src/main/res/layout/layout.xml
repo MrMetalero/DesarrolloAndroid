@@ -9,10 +9,8 @@
         android:layout_width="50sp"
         android:layout_height="50sp"
         android:background="@color/purple_700"
-        app:layout_constraintStart_toStartOf="@+id/principal"
-        app:layout_constraintEnd_toEndOf="@+id/principal"
-        app:layout_constraintTop_toTopOf="@+id/principal"
-        app:layout_constraintBottom_toBottomOf="@+id/principal"
+        app:layout_constraintEnd_toStartOf="@+id/CajaDer1"
+        app:layout_constraintBottom_toTopOf="@+id/CajaDer1"
         android:id="@+id/cajaCentral"
         >
     </TextView>
@@ -21,8 +19,8 @@
         android:layout_width="50sp"
         android:layout_height="50sp"
         android:background="@color/teal_200"
-        app:layout_constraintStart_toEndOf="@+id/cajaCentral"
-        app:layout_constraintTop_toBottomOf="@+id/cajaCentral"
+        app:layout_constraintStart_toEndOf="@+id/CajaCentroNegro"
+        app:layout_constraintBottom_toTopOf="@+id/CajaCentroNegro"
         android:id="@+id/CajaDer1"
         >
     </TextView>
@@ -31,8 +29,8 @@
         android:layout_width="50sp"
         android:layout_height="50sp"
         android:background="@color/teal_200"
-        app:layout_constraintEnd_toStartOf="@+id/cajaCentral"
-        app:layout_constraintTop_toBottomOf="@+id/cajaCentral"
+        app:layout_constraintEnd_toStartOf="@+id/CajaCentroNegro"
+        app:layout_constraintBottom_toTopOf="@+id/CajaCentroNegro"
         android:id="@+id/CajaIzq1"
         >
     </TextView>
@@ -41,8 +39,10 @@
         android:layout_width="50sp"
         android:layout_height="50sp"
         android:background="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/CajaIzq1"
-        app:layout_constraintStart_toEndOf="@+id/CajaIzq1"
+        app:layout_constraintStart_toStartOf="@+id/principal"
+        app:layout_constraintEnd_toEndOf="@+id/principal"
+        app:layout_constraintTop_toTopOf="@+id/principal"
+        app:layout_constraintBottom_toBottomOf="@+id/principal"
         android:id="@+id/CajaCentroNegro"
         >
     </TextView>
