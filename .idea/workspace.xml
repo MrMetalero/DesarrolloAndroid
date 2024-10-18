@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bd0413f-4537-4be9-82f5-38f4b294f4ab" name="Changes" comment="V1.0" />
+    <list default="true" id="4bd0413f-4537-4be9-82f5-38f4b294f4ab" name="Changes" comment="V1.0 appSaludo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,9 +16,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "MrMetalero"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/MrMetalero/DesarrolloAndroid.git",
+    "accountId": "00584202-8db4-48a8-9b40-494123f00ece"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
   <component name="ProjectId" id="2n9Wg3L1ghr9ItIzndPGFayIHLM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -29,9 +44,11 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/eddmenlaf/AndroidStudioProjects",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
@@ -61,7 +78,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728388712777</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="V1.0 appSaludo">
+      <option name="closed" value="true" />
+      <created>1729076709985</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729076709985</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -78,6 +103,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="primer commit, todos los proyectos" />
     <MESSAGE value="V1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1.0" />
+    <MESSAGE value="V1.0 appSaludo" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.0 appSaludo" />
   </component>
 </project>

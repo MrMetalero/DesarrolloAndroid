@@ -3,6 +3,7 @@ package com.apli.appsaludo
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -16,9 +17,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        val btnHello:Button = findViewById(R.id.btnHello)
-        val etName: AppCompatEditText =
-            findViewById(R.id.etName)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -26,15 +24,18 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        btnHello.setOnClickListener{
-            Log.i("Test","Boton pulsado")
+        val btnHello:AppCompatButton = findViewById(R.id.btnHello)
+        val etName:AppCompatEditText =
+            findViewById(R.id.cajatexto)
+        val nameCajaTexto:String = etName.text.toString()
 
+        //LOGCAT Y TOAST
+        btnHello.setOnClickListener{
+            //Log.i("Test","Boton pulsado")
+
+            Toast.makeText(this,"Hola $nameCajaTexto Que tal?",Toast.LENGTH_LONG).show()
         }
 
-        btnHello.setOnClickListener{
-            val name =
-            Toast.makeText(this,"Hola $name",Toast.LENGTH_LONG.show())
-        }
 
 
 
