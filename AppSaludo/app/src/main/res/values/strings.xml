@@ -2,4 +2,5 @@
     <string name="app_name">AppSaludo</string>
     <string name="button_text">Pulsa aqui</string>
     <string name="mi_nombre">Daniel Mena</string>
+    <string name="saludo">SALUDO EJEMPLO</string>
 </resources>
