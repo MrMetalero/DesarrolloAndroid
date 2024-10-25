@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bd0413f-4537-4be9-82f5-38f4b294f4ab" name="Changes" comment="V1.0 appIMC">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4bd0413f-4537-4be9-82f5-38f4b294f4ab" name="Changes" comment="V1.1 appIMC" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729598615499</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="V1.1 appIMC">
+      <option name="closed" value="true" />
+      <created>1729678973830</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729678973830</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,6 +130,7 @@
     <MESSAGE value="V1.0 appSaludo" />
     <MESSAGE value="V1.1 appSaludo con bug no muestra variable $name" />
     <MESSAGE value="V1.0 appIMC" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1.0 appIMC" />
+    <MESSAGE value="V1.1 appIMC" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.1 appIMC" />
   </component>
 </project>

@@ -4,12 +4,15 @@ import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class ImcCalculatorActivity : AppCompatActivity() {
-    private lateinit var viewMale:CardView
-    private lateinit var viewFemale:CardView
+    private lateinit var viewMale: CardView
+    private lateinit var viewFemale: CardView
+    private lateinit var cardViewMale: CardView
+    private lateinit var cardViewFemale: CardView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,34 +35,47 @@ class ImcCalculatorActivity : AppCompatActivity() {
     private fun initComponents(){
         viewMale = findViewById(R.id.viewMale)
         viewFemale = findViewById(R.id.viewFemale)
-
+        cardViewMale = viewMale // Direct reference since they're the same views
+        cardViewFemale = viewFemale
     }
-    val cardViewMale = findViewById<CardView>(R.id.viewMale)
-    val cardViewFemale = findViewById<CardView>(R.id.viewFemale)
 
 
+
+    var isComponentSelectedMale = false
+    var isComponentSelectedFemale = false
     private fun initListeners(){
 
-        var isComponentSelectedMale = false
-        var isComponentSelectedFemale = false
+
 
         cardViewMale.setOnClickListener {
 
-            cardViewMale.isActivated = true
-
+            isComponentSelectedMale = true
+            isComponentSelectedFemale = false
             setGenderColor()
         }
 
         cardViewFemale.setOnClickListener {
-            cardViewFemale.isActivated = true
+            isComponentSelectedFemale = true
+            isComponentSelectedMale= false
             setGenderColor()
         }
 
     }
 
+
+
+    private fun getBackgroundColor(isComponentSelected:Boolean):Int{
+        val colorReference = if(isComponentSelected) {
+            R.color.bg_comp_sel
+        } else {
+            R.color.bg_comp
+        }
+        return ContextCompat.getColor(this,colorReference)
+    }
+
     private fun setGenderColor(){
-
-
+        viewMale.setCardBackgroundColor(getBackgroundColor(isComponentSelectedMale))
+        viewFemale.setCardBackgroundColor(getBackgroundColor(!isComponentSelectedMale))
     }
 
 
