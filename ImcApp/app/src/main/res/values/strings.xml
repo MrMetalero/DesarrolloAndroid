@@ -2,4 +2,11 @@
     <string name="app_name">ImcApp</string>
     <string name="male">Hombre</string>
     <string name="female">Mujer</string>
+    <string name="slider1">ALTURA</string>
+    <string name="slider2">120 cm</string>
+    <string name="contentHeight">height</string>
+    <string name="tituloPeso">PESO</string>
+    <string name="tituloEdad">EDAD</string>
+    <string name="pesoValor">0</string>
+    <string name="edadValor">0</string>
 </resources>

@@ -1,18 +1,29 @@
 package com.apli.imcapp
 
+import android.icu.text.DecimalFormat
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.slider.RangeSlider
 
 class ImcCalculatorActivity : AppCompatActivity() {
     private lateinit var viewMale: CardView
     private lateinit var viewFemale: CardView
-    private lateinit var cardViewMale: CardView
-    private lateinit var cardViewFemale: CardView
+    private lateinit var viewSliderComponent: RangeSlider
+    private lateinit var viewAlturaText: TextView
+    private lateinit var viewPlusPeso: FloatingActionButton
+    private lateinit var viewMinusPeso: FloatingActionButton
+    private lateinit var viewPlusEdad: FloatingActionButton
+    private lateinit var viewMinusEdad: FloatingActionButton
+    private lateinit var viewPesoText: TextView
+    private lateinit var viewEdadText: TextView
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,8 +46,22 @@ class ImcCalculatorActivity : AppCompatActivity() {
     private fun initComponents(){
         viewMale = findViewById(R.id.viewMale)
         viewFemale = findViewById(R.id.viewFemale)
-        cardViewMale = viewMale // Direct reference since they're the same views
-        cardViewFemale = viewFemale
+        viewSliderComponent = findViewById(R.id.rsHeight)
+        viewAlturaText = findViewById(R.id.tvHeight)
+
+        // TODO
+        viewMinusEdad
+        viewPlusEdad
+
+        viewMinusPeso
+        viewPlusPeso
+
+
+
+
+
+
+
     }
 
 
@@ -47,18 +72,26 @@ class ImcCalculatorActivity : AppCompatActivity() {
 
 
 
-        cardViewMale.setOnClickListener {
+        viewMale.setOnClickListener {
 
             isComponentSelectedMale = true
             isComponentSelectedFemale = false
             setGenderColor()
         }
 
-        cardViewFemale.setOnClickListener {
+        viewFemale.setOnClickListener {
             isComponentSelectedFemale = true
             isComponentSelectedMale= false
             setGenderColor()
         }
+
+        viewSliderComponent.addOnChangeListener{_,value,_ ->
+            //viewAlturaText.text = value.toString()
+            viewAlturaText.text = DecimalFormat("#.##").format(value) + " cm"
+
+
+        }
+
 
     }
 
@@ -66,9 +99,10 @@ class ImcCalculatorActivity : AppCompatActivity() {
 
     private fun getBackgroundColor(isComponentSelected:Boolean):Int{
         val colorReference = if(isComponentSelected) {
-            R.color.bg_comp_sel
-        } else {
             R.color.bg_comp
+        } else {
+
+            R.color.bg_comp_sel
         }
         return ContextCompat.getColor(this,colorReference)
     }
