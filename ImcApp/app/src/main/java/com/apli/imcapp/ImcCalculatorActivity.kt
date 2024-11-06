@@ -1,10 +1,13 @@
 package com.apli.imcapp
 
+import android.content.Intent
 import android.icu.text.DecimalFormat
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
@@ -23,7 +26,7 @@ class ImcCalculatorActivity : AppCompatActivity() {
     private lateinit var viewMinusEdad: FloatingActionButton
     private lateinit var viewPesoText: TextView
     private lateinit var viewEdadText: TextView
-
+    private lateinit var viewCalcularImc: AppCompatButton
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -63,6 +66,7 @@ class ImcCalculatorActivity : AppCompatActivity() {
         viewMinusPeso = findViewById(R.id.minusPeso)
         viewPlusPeso = findViewById(R.id.plusPeso)
 
+        viewCalcularImc = findViewById(R.id.botonCalculo)
 
 
 
@@ -75,6 +79,7 @@ class ImcCalculatorActivity : AppCompatActivity() {
 
     var isComponentSelectedMale = false
     var isComponentSelectedFemale = false
+
 
 
     private fun initListeners(){
@@ -156,11 +161,32 @@ class ImcCalculatorActivity : AppCompatActivity() {
 
 
 
+        viewCalcularImc.setOnClickListener{
+            navigateToResult(calculateIMC())
+
+        }
+
 
 
 
     }
 
+    private fun navigateToResult(dobleRecibido:Double) {
+        var dobleResultado = dobleRecibido
+        val intentImcResult = Intent(this, ImcResultActivity::class.java)
+        startActivity(intentImcResult)
+    }
+
+
+    private fun calculateIMC():Double{
+
+        val edad: Int = viewEdadText.text.toString().toInt()
+        val peso:Int = viewPesoText.text.toString().toInt()
+        val altura:Int = viewAlturaText.text.toString().toInt()
+
+
+        return (peso/(altura*altura)).toDouble()
+    }
 
 
     private fun getBackgroundColor(isComponentSelected:Boolean):Int{

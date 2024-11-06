@@ -343,20 +343,19 @@
 
     <!-- BOTON CALCULAR IMC-->
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="300dp"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
         app:layout_constraintTop_toBottomOf="@id/viewPeso"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:id="@+id/botonCalculo"
-        android:layout_margin="40dp"
-        android:background="@color/purple_700"
+        android:layout_marginTop="50dp"
+        android:background="@color/bg_button"
         android:text="@string/calcularImcButton"
         android:textColor="@color/white"
-        android:textSize="25sp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:id="@+id/botonCalculo"
         >
-
-
     </androidx.appcompat.widget.AppCompatButton>
 
 
