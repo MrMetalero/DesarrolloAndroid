@@ -341,7 +341,7 @@
 
     </androidx.cardview.widget.CardView>
 
-    //BOTON CALCULAR IMC
+    <!-- BOTON CALCULAR IMC-->
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="300dp"
         android:layout_height="100dp"
