@@ -38,9 +38,13 @@ class ImcCalculatorActivity : AppCompatActivity() {
 
         initComponents()
         initListeners()
-
+        initUI()
     }
 
+    private fun initUI() {
+        setGenderColor()
+
+    }
 
 
     private fun initComponents(){
@@ -49,12 +53,15 @@ class ImcCalculatorActivity : AppCompatActivity() {
         viewSliderComponent = findViewById(R.id.rsHeight)
         viewAlturaText = findViewById(R.id.tvHeight)
 
-        // TODO
-        viewMinusEdad
-        viewPlusEdad
+        // Para la seccion de botones de edad
+        viewPesoText = findViewById(R.id.tvPeso)
+        viewEdadText = findViewById(R.id.tvEdad)
 
-        viewMinusPeso
-        viewPlusPeso
+        viewMinusEdad = findViewById(R.id.minusEdad)
+        viewPlusEdad = findViewById(R.id.plusEdad)
+
+        viewMinusPeso = findViewById(R.id.minusPeso)
+        viewPlusPeso = findViewById(R.id.plusPeso)
 
 
 
@@ -68,6 +75,8 @@ class ImcCalculatorActivity : AppCompatActivity() {
 
     var isComponentSelectedMale = false
     var isComponentSelectedFemale = false
+
+
     private fun initListeners(){
 
 
@@ -91,6 +100,63 @@ class ImcCalculatorActivity : AppCompatActivity() {
 
 
         }
+
+
+
+        //Onclick para peso
+        viewMinusPeso.setOnClickListener {
+
+            if (viewPesoText.text.toString().toInt() > 0) {
+                viewPesoText.text = (viewPesoText.text.toString().toInt() - 1).toString()
+            }else{
+                viewPesoText.text = viewPesoText.text
+            }
+
+        }
+
+        viewPlusPeso.setOnClickListener {
+
+            if (viewPesoText.text.toString().toInt() >= 0) {
+                viewPesoText.text = (viewPesoText.text.toString().toInt() + 1).toString()
+            }else{
+                viewPesoText.text = viewPesoText.text
+
+            }
+
+
+        }
+
+
+
+        //Onclick para edad
+        viewMinusEdad.setOnClickListener {
+
+            if (viewEdadText.text.toString().toInt() > 0){
+                viewEdadText.text =   (viewEdadText.text.toString().toInt()  -1).toString()
+
+            }else{
+                viewEdadText.text = viewEdadText.text
+
+            }
+
+
+        }
+
+        viewPlusEdad.setOnClickListener {
+
+            if (viewEdadText.text.toString().toInt() >= 0) {
+                viewEdadText.text = (viewEdadText.text.toString().toInt() + 1).toString()
+            }else{
+                viewEdadText.text = viewEdadText.text
+
+            }
+
+
+        }
+
+
+
+
 
 
     }
