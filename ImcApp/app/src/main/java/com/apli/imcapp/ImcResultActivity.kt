@@ -7,6 +7,11 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class ImcResultActivity : AppCompatActivity() {
+
+
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -15,6 +20,37 @@ class ImcResultActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+
         }
+
+        initComponents()
+        initListeners()
+        initUI()
+
     }
+
+    fun initComponents(){
+
+
+    }
+
+
+    fun initListeners(){
+
+
+    }
+
+    fun initUI(){
+
+
+    }
+
+
+
+
+
+
+
+
+
 }
