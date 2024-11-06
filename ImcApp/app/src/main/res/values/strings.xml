@@ -9,4 +9,5 @@
     <string name="tituloEdad">EDAD</string>
     <string name="pesoValor">0</string>
     <string name="edadValor">0</string>
+    <string name="calcularImcButton">CALCULAR IMC</string>
 </resources>

@@ -341,14 +341,21 @@
 
     </androidx.cardview.widget.CardView>
 
+    //BOTON CALCULAR IMC
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
         app:layout_constraintTop_toBottomOf="@id/viewPeso"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintCircleRadius="30dp"
+        android:id="@+id/botonCalculo"
+        android:layout_margin="40dp"
+        android:background="@color/purple_700"
+        android:text="@string/calcularImcButton"
+        android:textColor="@color/white"
+        android:textSize="25sp"
         >
+
 
     </androidx.appcompat.widget.AppCompatButton>
 
