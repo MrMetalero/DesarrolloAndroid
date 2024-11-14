@@ -5,6 +5,119 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ImcResultActivity">
+    tools:context=".ImcResultActivity"
+    android:layout_gravity="center_vertical"
+    android:background="@color/bg_comp_sel"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="20dp"
+        android:text="@string/tuResultado"
+        android:textStyle="bold"
+        android:textSize="49sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:id="@+id/titleTuResultado"
+        >
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_margin="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTuResultado"
+        app:cardBackgroundColor="@color/bg_comp"
+        app:cardCornerRadius="16dp"
+        android:id="@+id/cardviewActividad2"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+
+            <TextView
+                android:id="@+id/titleActivity2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/normalpeso"
+                android:textColor="@color/title_actividad2"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="top|center"
+                android:layout_marginBottom="30dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/resultadoNumero"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/resultadoActividad2"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:gravity="center"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/normalDescripcion"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@id/resultadoNumero"
+
+                android:id="@+id/descripcionResultado"
+                >
+
+            </TextView>
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:layout_constraintTop_toBottomOf="@id/cardviewActividad2"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/botonRecalcular"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@color/purple_700"
+
+
+
+        android:id="@+id/botonRecalcular"
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

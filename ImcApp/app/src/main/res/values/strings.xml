@@ -10,4 +10,19 @@
     <string name="pesoValor">0</string>
     <string name="edadValor">0</string>
     <string name="calcularImcButton">CALCULAR IMC</string>
+    <string name="resultadoActividad2">ERROR, NO SE PUDO OBTENER EL STRING </string>
+    <string name="tuResultado">Tu Resultado</string>
+    <string name="sobrepeso">Sobrepeso</string>
+    <string name="sobrepesoDescripcion">Estás un poco por encima de lo óptimo para tu peso y altura</string>
+    <string name="normalpeso">Normal</string>
+    <string name="normalDescripcion">Estás en lo óptimo para tu peso y altura</string>
+    <string name="obesidad1">Obesidad I</string>
+    <string name="obesidad1Descripcion">Estás por encima de lo óptimo para tu peso y altura</string>
+    <string name="obesidad2">Obesidad II</string>
+    <string name="obesidad2Descripcion">Estás bastante por encima de lo óptimo para tu peso y altura</string>
+    <string name="obesidad3">Obesidad Extrema III</string>
+    <string name="obesidad3Descripcion">Estás muy por encima de lo óptimo para tu peso y altura</string>
+    <string name="botonRecalcular">RE-CALCULAR</string>
+    <string name="inferiorPeso">Peso inferior</string>
+    <string name="inferiorPesoDescripcion">Estás por debajo de lo óptimo para tu peso y altura</string>
 </resources>

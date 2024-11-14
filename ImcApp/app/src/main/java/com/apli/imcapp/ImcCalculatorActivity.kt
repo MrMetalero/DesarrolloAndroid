@@ -16,6 +16,11 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.slider.RangeSlider
 
 class ImcCalculatorActivity : AppCompatActivity() {
+    companion object {
+        const val RESULTADOIMC = "RESULT"
+    }
+
+
     private lateinit var viewMale: CardView
     private lateinit var viewFemale: CardView
     private lateinit var viewSliderComponent: RangeSlider
@@ -172,20 +177,20 @@ class ImcCalculatorActivity : AppCompatActivity() {
     }
 
     private fun navigateToResult(dobleRecibido:Double) {
-        var dobleResultado = dobleRecibido
         val intentImcResult = Intent(this, ImcResultActivity::class.java)
+        intentImcResult.putExtra("RESULTADOIMC",dobleRecibido)
+
         startActivity(intentImcResult)
     }
 
 
     private fun calculateIMC():Double{
 
-        val edad: Int = viewEdadText.text.toString().toInt()
-        val peso:Int = viewPesoText.text.toString().toInt()
-        val altura:Int = viewAlturaText.text.toString().toInt()
 
+        val peso:Double = viewPesoText.text.replace("[^\\d.]".toRegex(), "").toDouble()
+        val altura:Double = viewAlturaText.text.replace("[^\\d.]".toRegex(), "").toDouble() / 100
 
-        return (peso/(altura*altura)).toDouble()
+        return (peso/(altura*altura))
     }
 
 

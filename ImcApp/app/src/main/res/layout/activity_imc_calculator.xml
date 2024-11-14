@@ -9,7 +9,6 @@
     android:background="@color/bg_app"
     android:paddingHorizontal="16dp"
     android:paddingVertical="32dp"
-
     >
 
     <!-- MALE -->
