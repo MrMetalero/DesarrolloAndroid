@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CharAppDaniMena</string>
+    <string name="tituloApp">CharApp</string>
+    <string name="nameTag">Name:</string>
+    <string name="powerTagRadius">Power:</string>
+    <string name="charNameDefault">Character name</string>
+    <string name="defaultPower">50</string>
+
+</resources>
