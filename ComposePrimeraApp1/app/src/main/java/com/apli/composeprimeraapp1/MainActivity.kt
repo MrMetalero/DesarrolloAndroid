@@ -42,7 +42,12 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ComposePrimeraApp1Theme {
-                ConstraintExample2()
+
+                Column(horizontalAlignment =  Alignment.CenterHorizontally,
+                    modifier =  Modifier.padding(40.dp,20.dp)
+                ) {
+
+                }
 
             }
         }
