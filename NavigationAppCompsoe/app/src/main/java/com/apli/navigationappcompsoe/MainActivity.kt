@@ -28,13 +28,16 @@ class MainActivity : ComponentActivity() {
 
         enableEdgeToEdge()
         setContent {
-                InitNavController()
+                //InitNavController()
+                //SuperHeroView()
+            SuperHeroGridView()
 
         }
 
 
     }
 
+    /*
     @Composable
     fun InitNavController(){
         val navController = rememberNavController()
@@ -50,7 +53,7 @@ class MainActivity : ComponentActivity() {
             }
 
     }
-
+*/
 
 
 
