@@ -26,19 +26,30 @@ fun ResultScreen(navController: NavController, number: Int, intentos: Int) {
     var randomNumber = generateRandomNumber()
     var resultado by remember { mutableStateOf("") }
     var numeroAcertado by remember { mutableStateOf(false) }
+    var recorridoHecho by remember { mutableStateOf(false) }
 
-        if (numeroAcertado == false){
+    //Habia otro bug que necesitaba arreglar. El composable no me dejaba cambiar las variables para que
+    //este trozo de codigo deje de ejecutarse cada vez que se redibuja. De forma que he tenido que usar
+    //LaunchedEffect, que he visto que me sirve para esto. Los mutableState si se estan guardando con los
+    //valores que tocan ahora
+    //Otra posible solucion puede ser utilizar val currentNumeroAcertado = rememberUpdatedState(numeroAcertado) ????
+    //Tengo que comprobarlo
+
+    LaunchedEffect(numeroAcertado) {
+        if (!numeroAcertado) {
             for (i in 1..intentos) {
                 randomNumber = generateRandomNumber()
                 if (number == randomNumber) {
-                    resultado = " Número acertado en el intento $i mi rey"
+                    resultado = "Número acertado en el intento $i mi rey"
                     numeroAcertado = true
-                    break //Si aciertas, se corta el loop
+                    break
                 } else {
                     resultado = "No hay acierto. El número era $randomNumber Troste"
                 }
             }
+            recorridoHecho = true
         }
+    }
 
 
         Column(
@@ -63,10 +74,7 @@ fun generateRandomNumber(): Int {
     return Random.nextInt(1, 11)
 }
 
-fun checkNumberLogic() {
 
-
-}
 
 
 

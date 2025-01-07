@@ -9,59 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0040935a-b436-462b-ad2c-e47f9817e5cd" name="Changes" comment="Por fin corregido el bug y subido al repo v1.0">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/migrations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/navigationejercicio/ExampleInstrumentedTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/navigationejercicio/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/navigationejercicio/Navigation.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/navigationejercicio/screens/GameScreen.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/navigationejercicio/screens/LoginScreen.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/navigationejercicio/screens/ResultScreen.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/navigationejercicio/ui/theme/Color.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/navigationejercicio/ui/theme/Theme.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/navigationejercicio/ui/theme/Type.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/navigationejercicio/ExampleUnitTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" />
-    </list>
+    <list default="true" id="0040935a-b436-462b-ad2c-e47f9817e5cd" name="Changes" comment="Por fin corregido el bug y subido al repo v1.0" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,17 +40,17 @@
     &quot;assignee&quot;: &quot;MrMetalero&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/MrMetalero/DesarrolloAndroid.git&quot;,
-    &quot;accountId&quot;: &quot;02e6e9f5-5caf-4076-b4ae-754cffd74fc9&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/MrMetalero/DesarrolloAndroid.git",
+    "accountId": "00584202-8db4-48a8-9b40-494123f00ece"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2rGBXqH4MYLaRzYLtsWy0Y8PRPn" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -121,7 +69,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/danym/AndroidStudioProjects/DesarrolloAndroid/NavigationAppEjercicio"
+    "last_opened_file_path": "/home/eddmenlaf/AndroidStudioProjects/DesarrolloAndroid/NavigationAppEjercicio"
   },
   "keyToStringList": {
     "kotlin-gradle-user-dirs": [
@@ -143,6 +91,8 @@
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
@@ -192,9 +142,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
