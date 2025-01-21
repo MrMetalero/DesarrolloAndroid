@@ -10,10 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0040935a-b436-462b-ad2c-e47f9817e5cd" name="Changes" comment="Por fin corregido el bug y subido al repo v1.0">
-      <change afterPath="$PROJECT_DIR$/LoginMVVM/app/src/main/java/com/apli/loginmvvm/login/UI/LoginScreen.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoginMVVM/app/src/main/java/com/apli/loginmvvm/login/UI/LoginViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScaffoldApp/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ScaffoldApp/.idea/gradle.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

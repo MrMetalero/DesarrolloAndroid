@@ -1,5 +1,6 @@
 package com.apli.loginmvvm.login.UI
 
+import android.util.Patterns
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Text
@@ -17,22 +18,40 @@ class LoginViewModel: ViewModel() {
     private val _password = MutableLiveData<String>()
     val password: LiveData<String> = _password
 
+    private val _isLoginEnabled = MutableLiveData<Boolean>()
+    val isLoginEnabled: LiveData<Boolean> = _isLoginEnabled
 
 
+    fun onEmailChange(email:String){
+         _email.value = email
+
+    }
+
+    fun onPasswordChange(password:String){
+        _password.value = password
+
+
+    }
+
+    fun onLoginChange(email: String, password: String){
+        _email.value = email
+        _password.value = password
+        _isLoginEnabled.value = enableLogin(email,password)
+
+
+
+    }
+
+    private fun enableLogin(email:String, password:String): Boolean {
+        return Patterns.EMAIL_ADDRESS.matcher(email).matches() && password.length >= 8
+
+
+
+
+
+    }
 
 
 }
 
-@Composable
-fun Email(email:String, onEmailChange: (String) -> Unit) {
-    TextField(
-        value = email,
-        onValueChange = { onEmailChange(it) },
-        modifier = Modifier.fillMaxWidth(),
-        placeholder = { Text(text = "Email")},
-        maxLines = 1,
-        singleLine = true,
 
-
-    )
-}

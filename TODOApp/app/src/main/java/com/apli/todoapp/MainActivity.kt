@@ -1,4 +1,4 @@
-package com.apli.loginmvvm
+package com.apli.todoapp
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,19 +11,38 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.apli.loginmvvm.login.UI.LoginViewModel
-import com.apli.loginmvvm.ui.theme.LoginMVVMTheme
-import com.example.loginmvvm.login.ui.LoginScreen
+import com.apli.todoapp.ui.theme.TODOAppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            LoginMVVMTheme {
-                LoginScreen(LoginViewModel())
+            TODOAppTheme {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    Greeting(
+                        name = "Android",
+                        modifier = Modifier.padding(innerPadding)
+                    )
+                }
+
             }
         }
     }
 }
 
+@Composable
+fun Greeting(name: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Hello $name!",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview() {
+    TODOAppTheme {
+        Greeting("Android")
+    }
+}
